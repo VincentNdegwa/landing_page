@@ -3,7 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/main_white"
     android:layout_height="match_parent"
     tools:context=".UserPage">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/main_start_frame"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
