@@ -8,20 +8,22 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.example.loginjava.R;
-import com.example.loginjava.databinding.FragmentLoginBinding;
+import com.example.loginjava.databinding.FragmentRegisterBinding;
 
 
-public class Login extends Fragment {
+public class Register extends Fragment {
 
-private FragmentLoginBinding bind;
+FragmentRegisterBinding bind;
 
-    public Login() {
+    public Register() {
+        // Required empty public constructor
     }
 
-    public static Login newInstance(String param1, String param2) {
+
+    public static Register newInstance(String param1, String param2) {
+
         return null;
     }
 
@@ -36,15 +38,17 @@ private FragmentLoginBinding bind;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        bind = FragmentLoginBinding.inflate(getLayoutInflater());
-        bind.navigateRegister.setOnClickListener(View->navigateToRegister());
+        bind = FragmentRegisterBinding.inflate(getLayoutInflater());
+        bind.navigateLogin.setOnClickListener(View->navigateToLogin());
+
         return bind.getRoot();
     }
 
-    private void navigateToRegister() {
+    private void navigateToLogin(){
         FragmentTransaction trans = getActivity().getSupportFragmentManager().beginTransaction();
-        trans.replace(R.id.main_start_frame, new Register());
+        trans.replace(R.id.main_start_frame, new Login());
         trans.addToBackStack(null);
         trans.commit();
     }
+
 }

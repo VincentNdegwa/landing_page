@@ -24,4 +24,5 @@ public class MainActivity extends AppCompatActivity {
         Intent userintent = new Intent(this, UserPage.class);
         startActivity(userintent);
     }
+
 }

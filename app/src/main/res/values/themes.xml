@@ -5,5 +5,11 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+    <style name="input_outline" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/main</item>
+        <item name="hintTextColor">@color/main</item>
+        <item name="android:textColor">@color/second</item>
+    </style>
+
     <style name="Theme.LoginJava" parent="Base.Theme.LoginJava" />
 </resources>
