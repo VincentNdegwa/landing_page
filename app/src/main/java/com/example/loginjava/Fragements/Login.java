@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.loginjava.R;
 import com.example.loginjava.databinding.FragmentLoginBinding;
@@ -38,7 +39,17 @@ private FragmentLoginBinding bind;
                              Bundle savedInstanceState) {
         bind = FragmentLoginBinding.inflate(getLayoutInflater());
         bind.navigateRegister.setOnClickListener(View->navigateToRegister());
+        bind.mainLoginButton.setOnClickListener(View->loginUser());
         return bind.getRoot();
+    }
+
+    private void loginUser() {
+        if (bind.emailInput.getEditText().length()>0 && bind.passwordInput.getEditText().length()>0){
+            Toast.makeText(getContext(),"Logged in", Toast.LENGTH_LONG).show();
+        }else {
+            Toast.makeText(getContext(),"Please insert values", Toast.LENGTH_LONG).show();
+
+        }
     }
 
     private void navigateToRegister() {
