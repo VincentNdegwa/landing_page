@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "901033379065",
+    "project_id": "javalogin-ef5c4",
+    "storage_bucket": "javalogin-ef5c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901033379065:android:f94820170622e07b870e28",
+        "android_client_info": {
+          "package_name": "com.example.loginjava"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA9Q60PDqwPdCq2JfAqz_m_lC2paQ9SYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
