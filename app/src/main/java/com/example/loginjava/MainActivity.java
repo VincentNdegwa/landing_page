@@ -25,4 +25,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(userintent);
     }
 
+        @Override
+    public void onBackPressed() {
+        finishAffinity();
+    }
+
 }

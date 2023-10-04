@@ -20,8 +20,5 @@ public class UserPage extends AppCompatActivity {
         trans.commit();
     }
 
-//    @Override
-//    public void onBackPressed() {
-//        finishAffinity();
-//    }
+
 }
