@@ -6,4 +6,5 @@
     android:shape="rectangle"
     android:viewportHeight="108">
     <solid android:color="@color/second"/>
+
 </shape>
